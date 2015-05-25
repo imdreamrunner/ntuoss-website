@@ -1,0 +1,114 @@
+body {
+  background: #eee;
+}
+.container {
+  width: 970px !important;
+}
+#header {
+  background: #eee;
+  height: 104px;
+  border-top: 4px solid #ccc;
+}
+#header h1 {
+  position: absolute;
+  margin: 25px 20px;
+  display: block;
+  font-weight: 300;
+  padding-top: 14px;
+  padding-left: 100px;
+  background: url("/static/images/logo.png") top left no-repeat;
+  font-size: 34px;
+  white-space: nowrap;
+}
+#header h1 span {
+  line-height: 16px;
+  margin: -14px 5px;
+  position: absolute;
+  color: #c60c30;
+  font-size: 16px;
+  font-family: Georgia, serif;
+}
+#header #social-links {
+  position: absolute;
+  width: 200px;
+  margin: 34px 0 0 770px;
+}
+#header #social-links li {
+  display: block;
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin-right: 10px;
+}
+#header #social-links li a {
+  display: block;
+  height: 32px;
+  width: 32px;
+  text-indent: -9999px;
+}
+.github {
+  background: url("/static/images/icons/github.png");
+}
+.twitter {
+  background: url("/static/images/icons/twitter.png");
+}
+.facebook {
+  background: url("/static/images/icons/facebook.png");
+}
+#nav {
+  background: #555;
+  height: 35px;
+  border-bottom: 3px solid #ccc;
+}
+#nav ul {
+  padding: 0;
+}
+#nav ul li {
+  display: block;
+  float: left;
+  line-height: 35px;
+}
+#nav ul li a {
+  display: block;
+  height: 35px;
+  padding: 0 17px;
+  color: #fff;
+}
+#nav ul li a.active {
+  border-bottom: 3px solid #0088fe;
+}
+#nav ul li a:hover {
+  background: #777;
+  text-decoration: none;
+  border-bottom: 3px solid #0088fe;
+}
+#footer {
+  line-height: 30px;
+  height: 32px;
+  text-align: center;
+  width: 100%;
+  background: #666;
+  border-top: 2px solid #aaa;
+  color: #aaa;
+  font-weight: 300;
+  font-size: 12px;
+}
+.block {
+  background: #fff;
+  border-left: 4px solid #0088fe;
+  padding: 10px 10px 10px 24px;
+  margin: 20px 0;
+}
+.block h2 {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 24px;
+  color: #555;
+}
+.block p {
+  font-size: 15px;
+  color: #555;
+}
+.block:nth-child(odd) {
+  border-left: 4px solid #ffca00;
+}

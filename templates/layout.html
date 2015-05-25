@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}NTU Open Source Society, Nanyang Technological University, Singapore{% endblock %}</title>
+
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/layout.css" rel="stylesheet">
+    {% for row in css %}
+    <link href="{{ row }}" rel="stylesheet">
+    {% endfor %}
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <h1><span>Nanyang Technological University</span>Open Source Society</h1>
+        <ul id="social-links">
+            <li><a class="github" href="https://github.com/ntuoss" target="_blank">Github</a></li>
+            <li><a class="facebook" href="https://www.facebook.com/ntuoss" target="_blank">Facebook</a></li>
+            <li><a class="twitter" href="https://twitter.com/ntuoss" target="_blank">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+{% set navigation_bar = [
+('/', 'home', 'Home'),
+('/tgifhacks/', 'hacks', 'TGIFHacks'),
+('/projects/', 'projects', 'Projects'),
+('/lessons/', 'lessons', 'Lessons'),
+('/sponsorship/', 'sponsorship', 'Sponsorship'),
+('/blog/', 'blog', 'Blog'),
+] -%}
+{% set active_page = active_page|default('home') -%}
+<div id="nav">
+    <div class="container">
+        <ul>
+            {% for href, id, caption in navigation_bar %}
+            <li><a href="{{ href|e }}" {% if id == active_page
+                %} class="active"{% endif
+                %}>{{ caption|e }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div id="body">
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
+</div>
+<div id="footer">
+    Copyleft (&#390;) 2014 NTUOSS.
+</div>
+<script src="/static/js/jquery-1.11.1.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/underscore-min.js"></script>
+{% for row in js %}
+<script src="{{ row }}"></script>
+{% endfor %}
+</body>
+</html>

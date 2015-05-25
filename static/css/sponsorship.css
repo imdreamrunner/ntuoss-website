@@ -1,0 +1,123 @@
+/* 
+    Document   : sponsorship
+    Created on : Jul 28, 2013, 11:30:42 AM
+    Author     : Danyang
+    Description:
+        Purpose of the stylesheet follows.
+*/
+div.sponsorship{
+    width:900px;
+    color: #999;
+}
+
+
+.s-block {
+    display: block;
+    background: #2a2a2a;
+    position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; min-height: 0px;
+}
+.span8 h3{
+    font-size: 50px;
+}
+.span8 p{
+    font-size: 25px;
+}
+.text-only{
+    padding: 20px;
+}
+.s-block-wrap{
+    position: relative;
+    height: 300px;
+}
+.s-block-wrap-large{
+    position: relative;
+    height: 600px;
+}
+/* block-sponsor */
+.s-block-sponsor span{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 20px;
+    line-height: 100%;
+    background: rgba(0,0,0,0.2); /* opacity */
+    filter: none;
+    position: absolute;
+}
+.s-block-sponsor span a {
+    color: #fff;
+}
+/* END of block-sponsor */
+a {
+    color: #f66;
+    text-decoration: none;
+}
+
+span.em {
+    font-style: normal;
+    color: #1ba1e2;
+}
+root { 
+    display: block;
+}
+
+.row-fluid {
+  width: 100%;
+  *zoom: 1;
+}
+
+.row-fluid:before,
+.row-fluid:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row-fluid:after {
+  clear: both;
+}
+
+.row-fluid [class*="span"] {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+
+.row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 2.127659574468085%;
+}
+
+.row-fluid .span12 {
+  width: 100%;
+}
+
+.row-fluid .span8 {
+  width: 66.66667%;
+  *width: 66.66667%;
+}
+
+
+.row-fluid .span6 {
+  width: 50%;
+}
+
+
+.row-fluid .span4 {
+  width: 33.3333333%;
+  *width: 33.3333333%;
+}
+
+.row-fluid .span3 {
+  width: 25%;
+  *width: 25%;
+}
+

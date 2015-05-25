@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% set css = ['/static/css/home.css'] %}
+{% block body %}
+<div id="focus">
+    <img src="/static/images/home_1.jpg" />
+</div>
+<div id="intro" class="block">
+    <h2>Build and Break Technology</h2>
+    <p>The Open Source Society (OSS) is a student community at the Nanyang Technological University helping to promote the value and importance of Open Source in NTU. We attract students of common technical interests to foster a community of engineers, hackers and builders to explore their interests in technology and share their knowledge and expertise with others.
+    </p>
+    <p>Through our <a href="/tgifhacks/">weekly meetings</a>, we help students learn practical coding skills, find partners to work with on interesting projects and also help promote the value and importance of contributing to open source development.
+    </p>
+    <p>We are also hosting an Ubuntu mirror <a href="http://oss.sce.ntu.edu.sg/" target="_blank">in NTU</a>.
+    </p>
+    <p>We are NTU's resident hackers and we like to build things. That's why you should hack with us!
+    </p>
+</div>
+<div id="mailing-list" class="block">
+    <h2>Join our mailing list</h2>
+    <form class="form-inline">
+        <input type="email" class="form-control" id="email" placeholder="Your email address">
+        <button type="submit" class="btn btn-default">Join</button>
+    </form>
+    <p>After joining our mailing list, you will receive updates on our weekly events and more!</p>
+</div>
+{% endblock %}

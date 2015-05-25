@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% set active_page = 'hacks' %}
+{% set css = ['/static/css/hacks.css'] %}
+{% set js = ['/static/js/hacks.js'] %}
+{% block body %}
+<ul id="events" class="block">
+    Loading...
+</ul>
+
+<div class="block">
+    Event list is loaded from <a href="https://www.facebook.com/ntuoss/events" target="_blank">our facebook page</a>.
+</div>
+
+<script id="event-item" type="text/html">
+    <li>
+        <div class="img">
+            <img src="<%- picture %>" />
+        </div>
+        <div class="name">
+            <a href="https://www.facebook.com/events/<%- id %>/" target="_blank"><%- name %></a>
+        </div>
+        <div class="location"><%- location %></div>
+        <div class="date"><%- start_time %></div>
+    </li>
+</script>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+#focus {
+  width: 100%;
+  margin: 20px 0;
+}
+#focus img {
+  width: 100%;
+}
+form {
+  margin-bottom: 5px;
+}
+#email {
+  width: 600px;
+}
